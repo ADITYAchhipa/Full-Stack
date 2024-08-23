@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+          .container{
+            border: 5px solid red;
+            display: flex;
+            /* flex-direction: column; */
+            height:500px;
+            flex-wrap: wrap;
+            /* gap :10px; */
+            /* flex-flow: column wrap ;  is the combination od flex direction and flex wrap */
+
+            /* justify-content: space-around; equally divide the space around it make space between parent  and child*/
+            /* justify-content: center;  to align content at the center */
+            /* justify-content: space-between; it do not make space between the parent and child */
+
+            /* align-content: center; */
+            /* justify works on main  axis by defaault it is x */
+            /* align item works on cross  axis by defaault it is y */
+
+            /* flex: grow shrink basis */
+
+
+
+
+        }
+
+        .box{
+            /* margin: 10px; */
+            /* height:50; */
+            /* margin: 10px; */
+            /* width: 100px;    */
+
+
+            /* padding: 56px; */
+            border: 2px solid green;
+            flex-basis: 25%;    /*it divides in 25% horizontally*/
+            /* alig align-self: fl; */
+          }
+
+          #box2{
+            order: 1;
+            /* flex-grow: 1; */
+        }
+        #box1{
+              flex-grow: 2;
+            order: 1;
+          }
+         
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="box" id='box1'>box1</div>
+       <div class="box" id='box2'>box2</div>
+       <div class="box" id='box3'>box3</div>
+       <div class="box" id='box4'>box4</div>
+       <div class="box" id='box5'>box5</div>
+       <div class="box" id='box6'>box6</div>
+       <div class="box" id='box7'>box7</div>
+       <div class="box" id='box8'>box8</div>
+       <div class="box" id='box9'>box9</div>
+
+       <!-- to create the same tage of same class multiple time -->
+
+        <!-- .conrainer>.box#box-{box-$}*8 -->
+    </div>
+</body>
+</html>

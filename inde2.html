@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        /* property transform has 4 values */
+/*         
+        translate
+        skew
+        rotate
+        scale
+
+         */
+
+           @keyframes spinner {
+            0%,100%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(300px,0);
+            }
+            50%{
+                transform: translate(300px,300px);
+            }
+            75%{
+                transform: translate(0px,300px);
+            }
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width :200px;
+            height: 200px;
+            background-color: aqua;
+            /* transform: translate3d(330px);
+            transform: translateX(50px); */
+            /* transform: translate(500px, 500px); */
+            /* transform: scale(1.1); */
+            
+            /* transform: scaleX(5); */
+            /* transform: scaley(10); */
+            /* transform: scale(7,5); */
+            /* transform: scale(4); */
+            /* transform: rotate(45deg); */
+            /* transform: rotateX(90deg) */  
+            /* ot invisible it rotate and become plane */
+
+            transition: 0.5s ease-in-out;
+
+        }
+        
+        #container:hover{
+            background-color: bisque;
+            border-radius: 50px;
+            border-radius: 50%;
+        }
+        #container1:hover{
+            rotate: 90deg;
+            background-color: bisque;
+            /* border-radius: 50px; */
+            border-radius: 50%;
+        }
+        .play{
+            height: 200px;
+            width: 200px;
+            border: 1px solid red;
+        }
+        .box{
+            background-color: red;
+            height: 40px;
+            width: 40px;
+            transition: 1s ease-in-out;
+            /* trans */
+        }
+        .play:hover .box{
+            transform: translate(160px,160px);
+        }
+            .contain {
+            height: 400px;
+            width: 400px;
+            background-color: aquamarine;
+        }
+        .inner{
+            height: 100px;
+            width: 100px;
+            background-color: plum;
+           
+        }
+        .contain:hover .inner{
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: spinner 2s ease-in-out infinite ;
+        }
+
+        </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        i am hover
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="container1" class="container">
+
+
+
+    </div>
+    <div class="play">
+        <div class="box">
+
+        </div>
+    </div>
+    <div class="contain">
+        <div class="inner">
+
+        </div>
+    </div>
+
+</body>
+</html>

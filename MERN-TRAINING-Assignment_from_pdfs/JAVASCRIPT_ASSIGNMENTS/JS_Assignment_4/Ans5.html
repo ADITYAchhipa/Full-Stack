@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ans 5</title>
+</head>
+<body>
+    <form id="form-login" action="#">
+        <label for="username">Enter your name</label>
+        <input id="input-name" name="inputName" type="text" placeholder="Enter your name">
+        <br>
+
+        <label for="email">Enter your email</label>
+        <input id="input-email" name="inputEmail" type="email" placeholder="Enter your email">
+        <br>
+
+        <button type="submit" id="submit-btn">Submit</button>
+        <div id="msgBox">
+
+        </div>
+    </form>
+
+
+    <script>
+        let submitBtn = document.getElementById("submit-btn");
+        let form = document.getElementById("form-login");
+        let msgBox = document.getElementById("msgBox");
+
+        form.addEventListener("submit", (event)=>{
+            event.preventDefault();
+
+            const formData = new FormData(form);
+
+            let msg = document.createElement("div");
+            msg.innerText = "Thanks for your response, " + formData.get('inputName')
+            msgBox.appendChild(msg);
+        })
+        
+    </script>
+</body>
+</html>

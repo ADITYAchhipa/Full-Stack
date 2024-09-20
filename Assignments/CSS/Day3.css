@@ -1,0 +1,125 @@
+*{
+    /* background-color: azure; */
+    padding: 0%;
+    margin: 0;
+}
+
+header {
+    padding: 0%;
+}
+
+
+/* Nav Bar and its children  */
+
+.nav-bar {
+    display: flex;
+    margin: auto;
+    padding: 0;
+}
+
+/* Logo and its children */
+
+.logo {
+    height : 10vh;
+    display: flex;
+    flex:1;
+}
+
+.logo > img {
+    height : 30px;
+    justify-content: center;
+    margin: auto;
+}
+
+.logo-name {
+    line-height: 2px;
+    /* margin: 1px; */
+    font-size: 1rem;
+    margin: auto;
+}
+
+/* Options and its children */
+
+
+.options {
+    display: flex;
+    flex: 4;
+
+    padding: 0 10rem;
+    margin: auto;
+    justify-content: space-around;
+}
+
+/* Donate now and its children */
+
+
+.donate-now {
+    flex: 1;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.donate-now p {
+    background-color: orangered;
+    position: relative;
+} 
+
+ /* Main and its children */
+
+.main {
+    height: 70vh;
+    background-image: url(../Assets/background.png);
+    background-size: cover;
+    background-position: center center;
+
+}
+
+
+/* Footer and its children */
+
+footer {
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+}
+
+.sign-up {
+    font-style: italic;
+    flex: 2;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.empty {
+    flex: 1;
+}
+
+.email {
+    height: 100rem;
+    flex: 2;
+    margin: auto;
+    padding: 20px;
+}
+
+.email button {
+    background-color: rgb(140, 181, 253);
+    border: none;
+    /* height: 25px; */
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+
+}
+
+.email input {
+    padding: 10px;
+    border: none;
+}
+

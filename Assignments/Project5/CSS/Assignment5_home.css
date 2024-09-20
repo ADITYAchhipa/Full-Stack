@@ -1,0 +1,755 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* HEADER */
+
+header {
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+header > img {
+    position: fixed;
+    left: 10px;
+}
+
+header > .icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* NAV-BAR  */
+
+.nav-bar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar > ul {
+    height: 36px;
+    width: 440px;
+    margin: auto;
+    list-style-type: none;
+
+    display: flex;
+}
+
+.nav-bar > ul > li {
+    padding: 10px 20px;
+}
+
+.nav-bar > ul > li > a {
+    text-decoration: none;
+    color: #111111;;
+}
+
+.nav-bar > ul > li > a:active {
+    color: red;
+}
+
+.nav-bar > svg {
+    /* height: 50px; */
+    display: none;
+}
+
+
+/* SECTION 1 */
+
+.section-1 {
+    height: 620px;
+    width: 100%;
+    background-image: url(https://assets.nicepagecdn.com/11a8ddce/3667110/images/pexels-photo-1471751.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1  .content {
+    box-sizing: content-box;
+    height: 460px;
+    width: 670px;
+    background-color: rgba(135, 135, 135, 0.5);
+    border: 20px solid #2590f4;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-1 > .content > h3 {
+    margin: 17px 10px 0px 10px;
+    font-size: 3rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.section-1 > .content > p {
+    margin-top: 41px;
+    padding: 0 40px;
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.section-1 > .content > button {
+    display: block;
+    padding: 10px 30px;
+    border: none;
+    background-color: #2590f4;
+    margin: 30px auto 0px auto;
+    color: white;
+    font-size: 1.075rem;
+}
+
+
+/* SECTION 2 */
+
+.section-2 > .content {
+    margin: auto;
+    /* background-color: aliceblue; */
+}
+
+.section-2 > .content > h3 {
+    width: 605px;
+    font-size: 2.25rem;
+    margin: 60px auto 0px auto;
+    /* margin: 60px auto 0; */
+    text-align: center;
+}
+
+.section-2 .info-grid {
+    margin: 21px auto 60px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+
+.section-2 .box {
+    padding: 23px 30px;
+}
+
+.section-2 .icon-tick {
+    height: 36px;
+    width: 36px;
+    margin: 21px 0px 59px 0px;
+    margin: 0 auto 0 0;
+    padding: 8px;
+    background-color: #2590f4;
+    border-radius: 50%;
+}
+
+.section-2 .box > p {
+    margin-top: 24px;
+    line-height: 1.6;
+}
+
+
+
+/* SECTION 3 */
+.section-3 {
+    background-color: #f2f2f2;
+    padding: 60px 0;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 40px; 
+    margin: auto;
+  }
+
+.photo-grid > .box {
+    position: relative;
+    padding-top: 100%; 
+    overflow: hidden; 
+}
+
+.photo-grid > .box > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-3 > .content > button {
+    font-size: 1.125rem;
+    display: block;
+    border: none;
+    padding: 10px 30px;
+    margin: 30px auto 0 auto;
+    background-color: #2590f4;
+}
+
+.section-3 > .content > button > a {
+    text-decoration: none;
+    color: white;
+}
+
+.section-3 > .content > button > a:visited {
+    color: rgb(228, 228, 228);
+}
+
+
+/* SECTION 4 */
+
+
+.section-4 .content {
+    margin: auto;
+}
+
+.section-4 .profile-grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.section-4 .profile {
+    padding: 30px;
+}
+
+.section-4 .photo-border {
+    height: 260px;
+    width: 260px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 10px solid #2590f4;
+    border-radius: 50%;
+}
+
+.section-4 .photo {
+    height: 180px;
+    width: 180px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.section-4 #photo1 {
+    background-image: url(https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/23f2b6ec8f435911852884f1/2.jpg);
+}
+
+.section-4 #photo2 {
+    background-image: url(https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/47d488474b1750ad8f9a684f/fggf.jpg);
+}
+
+.section-4 #photo3 {
+    background-image: url(https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/dee2a7ea9eea577cab16110a/fff.jpg);
+}
+
+.section-4 .name {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin: 41px 0 0 0;
+    text-align: center;
+}
+
+.section-4 .designation {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 11px 0 0 0;
+    text-align: center;
+    font-weight: 700;
+    color: #2590f4;
+}
+
+.section-4 .bio {
+    font-weight: 300;
+    margin: 23px 0 0 0;
+    text-align: center;
+    color: #111111;
+    line-height: 1.6rem;
+}
+
+.section-4 .socials {
+    height: 50px;
+    /* width: 300px; */
+    padding: 0 10px;
+    margin: 28px auto 0;
+    background-color: #2590f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 .socials > svg {
+    margin: 10px;
+}
+
+.section-4 > .content > p {
+    margin: 28px auto 60px auto;
+    text-align: center;
+}
+
+.section-4 > .content > p > a {
+    color: black;
+    text-decoration: none;
+}
+
+/* SECTION 5  */
+
+.section-5 {
+    background-color: #f2f2f2;
+}
+
+.section-5 .content {
+    margin: auto;
+    padding: 60px 0 60px 0;
+}
+
+.section-5 .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.section-5 .box {
+    padding: 30px;
+    background-color: white;
+}
+
+.section-5 .sticker {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #2590f4;
+
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-5 .info-grid > .box > h5 {
+    margin: 30px auto 0;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 200;
+}
+
+.section-5 .info-grid > .box > p {
+    color: #999999;
+    text-align: center;
+    margin-top: 23px;
+    line-height: 1.6;
+}
+
+
+/* SECTION 6  */
+
+.section-6 .content {
+    margin: 60px auto 60px auto;
+}
+
+.section-6 .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.section-6 #book {
+    min-height: 363.66px;
+    margin: 7px;
+    padding: 20px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.section-6 #book #title {
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.section-6 #book ul {
+    margin-top: 13px;
+    list-style: none;
+    line-height: 2.5;
+}
+
+.section-6 #book ul li {
+    position: relative;
+    padding-left: 25px; 
+}
+
+.section-6 #book ul li::before {
+    content: '\2713'; 
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    color: #000;
+}
+
+.section-6 #book #freepik {
+    margin-top: 11px;
+}
+
+.section-6 #book #freepik a {
+    color: #2590f4;
+    text-decoration: none;
+}
+
+.section-6 #freepik a:visited {
+    color: #2590f4;
+    text-decoration: none;
+}
+
+.section-6 #book > button {
+    height: 45px;
+    width: 135px;
+    color: white;
+    background-color: #2590f4;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border: none;
+    font-size: 1rem;
+
+}
+
+.section-6 #book-image {
+    background-image: url(https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/8f93fb525fca5a7d86a20ba0/black-white-exterior-building.jpg);
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 7px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.section-6 #article {
+    min-height: 321.66px;
+    flex: 1;
+    margin: 7px;
+    padding: 21px 30px 21px 70px;
+
+    font-size: 1rem;
+    line-height: 1.6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-6 #fade {
+    color: #999999;
+}
+
+.section-6 #bold {
+    font-weight: 700;
+}
+
+.section-6 #article-image {
+    background-image: url(https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/fd44305e8d7e5cb4adf5f7cd/low-angle-shot-creative-modern-building-with-outstanding-architectural-twists.jpg);
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 7px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.section-6 .sticker {
+    height: 93px;
+    width: 93px;
+    background-color: #2590f4;
+    border-radius: 50%;
+}
+
+
+.section-6 .content .sticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section-6 #sticker1 {
+    left: -30px;
+}
+
+.section-6 #sticker2 {
+    /* position: relative; */
+    right: -30px;
+}
+
+
+
+
+
+/* SECTION 7  */
+
+.section-7 {
+    background-color: #2590f4;
+}
+
+.section-7 .content {
+    margin: auto;
+    padding: 66px 0px 230px 0px;
+    color: white;
+}
+
+.section-7 .outer-flex {
+    display: flex;
+}
+
+.section-7 .ready {
+    flex: 1;
+    margin: auto;
+    padding: 38px 42px;
+    max-width: 540px;
+}
+
+.section-7 .ready h5 {
+    font-size: 2.25rem;
+}
+
+.section-7 .ready p {
+    margin-top: 25px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.section-7 .ready button {
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: none;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.section-7 .inner-flex {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.section-7 .sample {
+    display: flex;
+    gap: 20px;
+    min-height: 163.33px;
+
+    padding: 20px 0 20px 30px;
+}
+
+.section-7 .icon {
+    height: 65px;
+    width: 65px;
+    margin: 0 20px;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-7 .desc {
+    width: 353px;
+}
+
+.section-7 .title {
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.section-7 .text {
+    margin: 20px 0 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* SECTION 8  */
+
+.section-8 .box {
+    height: 391px;
+    width: 550px;
+    padding: 0 10px 30px 10px;
+    margin: auto;
+
+    background-color: white;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+
+    position: relative;
+    top: -90px;
+}
+
+.section-8 .photo {
+    height: 198px;
+    width: 198px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url(https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/e0fa2686ba3f5ed2af6a9332/pexels-photo-3894378.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    top: -70px;
+}
+
+.section-8 #quote {
+    margin-top: 16px;
+    line-height: 1.4;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+    position: relative;
+    top: -70px;
+
+}
+
+.section-8 #sticker {
+    height: 101px;
+    width: 101px;
+    padding: 31px;
+    margin: -39px auto 0 auto;
+    border-radius: 50%;
+    background-color: #2590f4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECTION 9  */
+
+.section-9 {
+    padding: 70px 0;
+    background-color: #f2f2f2;
+}
+
+.section-9 .content {
+    background-color: white;
+    margin: auto;
+}
+
+.section-9 .flex-row {
+    display: flex;
+}
+
+.section-9 .left {
+    padding: 29px;
+}
+
+.section-9 .photo {
+    height: 260px;
+    width: 260px;
+    margin-left: 62px;
+    border-radius: 50%;
+    background-image: url(https://assets.nicepagecdn.com/11a8ddce/3667110/images/pexels-photo-733500copy.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.section-9 .sticker {
+    /* width: 116px; */
+    display: inline-block;
+    padding: 32px;
+    border-radius: 50%;
+    background-color: #2590f4;
+    position: relative;
+    left: -62px;
+}
+
+
+.section-9 .right {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-9 #quote {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.section-9 #freepik {
+    margin-top: 30px;
+}
+
+.section-9 #freepik > a {
+    text-decoration: none;
+    color: #2590f4;
+}
+
+.section-9 #phone {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.section-9 #number {
+    font-weight: 700;
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+}
+
+/* SECTION 10  */
+
+.section-10 {
+    background-color: #333333;
+}
+
+.section-10 .content {
+    height: 120px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-10 .content p {
+    font-size: 0.875rem;
+}
+

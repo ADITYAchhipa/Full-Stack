@@ -1,0 +1,150 @@
+@media (min-width: 425px) and (max-width: 770px) {
+
+
+    /* HEADER  */
+
+    header > img {
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        height: 30px;
+    }
+    
+    header > .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 1;
+        margin-left: 50px;
+    }
+    
+    header > .icons > img {
+        margin: 10px;
+    }
+
+    /* FIRST */
+
+    .first > .art {
+        position: absolute;
+        top: 100px;
+        left: 75px;
+        color: white;
+        font-size: 60px;
+    }
+
+    .first > .school {
+        position: absolute;
+        bottom: 50px;
+        left: 75px;
+        color: white;
+        font-size: 60px;
+    }
+
+    /* SECOND */
+
+    
+.second {
+    background-color: #7da2a9;
+    width: 100vw;
+    font-family: sans-serif;
+    
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.second > .inner {
+    display: block;
+    align-items: start;
+    gap: 3rem;
+    width: 80%;
+    margin: auto;
+}
+
+@media (min-width: 200px) and (max-width: 540px) {
+    .second > .inner {
+        display: block;
+        align-items: start;
+        gap: 3rem;
+        width: 95%;
+        margin: auto;
+    }
+
+    .second-info {
+       width: 80%;
+       margin: auto;
+    }
+}
+
+.children {
+    margin: 50px;
+    flex-direction: column;
+    align-items: end;
+    flex: 1;
+}
+
+#second-p-1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: end;
+    font-weight: 600;
+}
+
+#second-p-2 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.second-info {
+    box-sizing: border-box;
+    flex: 1;
+    color: white;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.second-info > p {
+    margin-bottom: 10px;
+}
+
+/* THIRD */
+
+.programs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* width: 300px; */
+    max-width: 300px;
+    margin: 80px;
+}
+
+.program-heading {
+    margin: auto;
+    max-width: 410px;
+}
+
+.third-grid {
+    margin-bottom: 70px;
+}
+
+.third-grid > h3 {
+    font-size: 1.5rem;
+}
+
+.third-grid > svg {
+    height: 10px;
+}
+
+
+
+
+
+
+    
+}
+
+
+
+

@@ -1,0 +1,25 @@
+@media (min-width:1025px) and (max-width: 1440px){
+
+    .first {
+        height: 130vh;
+    }
+
+    .first > .art {
+        position: absolute;
+        top: 150px;
+        left: 100px;
+        color: white;
+        font-size: 75px;
+    }
+
+    .first > .school {
+        position: absolute;
+        bottom: 30px;
+        left: 100px;
+        color: white;
+        font-size: 75px;
+    }
+
+    /* SECOND  */
+    
+}

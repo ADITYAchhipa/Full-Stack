@@ -1,0 +1,38 @@
+@media (min-width:50px) and (max-width:424px) {
+    
+    /* HEADER  */
+
+    header > .icons {
+        display:none;
+    }
+
+    /* FIRST */
+
+    .first {
+        overflow: hidden;
+    }
+
+    .first > .art {
+        position: absolute;
+        top: 150px;
+        left: 40px;
+        color: white;
+        font-size: 45px;
+        overflow: hidden;
+    }
+
+    .first > .school {
+        position: absolute;
+        bottom: 70px;
+        left: 40px;
+        color: white;
+        font-size: 45px;
+        overflow: hidden;
+    }
+
+    /* SECOND */
+
+    
+
+
+}

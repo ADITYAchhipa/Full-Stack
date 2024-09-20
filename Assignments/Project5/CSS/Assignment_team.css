@@ -1,0 +1,156 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* HEADER */
+
+header {
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+header > img {
+    position: fixed;
+    left: 10px;
+}
+
+header > .icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* NAV-BAR  */
+
+.nav-bar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar > ul {
+    height: 36px;
+    width: 440px;
+    margin: auto;
+    list-style-type: none;
+
+    display: flex;
+}
+
+.nav-bar > ul > li {
+    padding: 10px 20px;
+}
+
+.nav-bar > ul > li > a {
+    text-decoration: none;
+    color: #111111;;
+}
+
+.nav-bar > ul > li > a:active {
+    color: red;
+}
+
+.nav-bar > svg {
+    /* height: 50px; */
+    display: none;
+}
+
+
+/* SECTION 1 */
+
+.section-1 {
+    height: 620px;
+    width: 100%;
+    background-image: url(https://assets.nicepagecdn.com/11a8ddce/3667110/images/pexels-sevenstorm-juhaszimrus-425160.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1  .content {
+    box-sizing: content-box;
+    height: 460px;
+    width: 670px;
+    background-color: rgba(135, 135, 135, 0.5);
+    border: 20px solid #2590f4;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-1 > .content > h3 {
+    margin: 17px 10px 0px 10px;
+    font-size: 3rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.section-1 > .content > p {
+    margin-top: 41px;
+    padding: 0 40px;
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.section-1 > .content > button {
+    display: block;
+    padding: 10px 30px;
+    border: none;
+    background-color: #2590f4;
+    margin: 30px auto 0px auto;
+    color: white;
+    font-size: 1.075rem;
+}
+
+
+/* SECTION 2 */
+
+.section-2 {
+    background-color: #2590f4;
+    color: white;
+}
+
+.section-2 .content {
+    margin: auto;
+    padding: 60px 0 180px 0;
+}
+
+.section-2 h3 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.section-2 p {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 12px;
+}
+
+.section-2 p a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.section-2 p a:visited {
+    color: white;
+}

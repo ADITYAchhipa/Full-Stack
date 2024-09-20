@@ -1,0 +1,159 @@
+
+@media (max-width: 1024px) and (min-width: 0px) {
+
+    main > .nav-bar > ul {
+        display: none;
+    }
+
+    main > .nav-bar > svg {
+        display: block;
+    }
+
+}
+
+
+@media (max-width: 990px) {
+    
+    #laptop-icon, #computer-icon {
+        display: none;
+    }
+}
+
+
+@media (max-width: 770px) {
+
+    #tablet-icon, #landscape-phone-icon, #phone-icon {
+        display: none;
+    }
+}
+
+
+
+/* SECTION 1 */
+
+@media (max-width: 770px) {
+
+    .section-1  .content {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+
+
+@media (max-width: 578px) {
+    .section-1  .content {
+        height: 490px;
+        width: 300px;
+    }
+
+    .section-1 > .content > h3 {
+        margin: 17px 10px 0px 10px;
+        font-size: 1.5rem;
+
+    }
+}
+
+
+
+/* SECTION 2 */
+
+
+@media (min-width: 1201px) {
+
+    
+    .section-2 .content {
+        width: 1140px;
+        margin: auto;
+    }
+    
+}
+
+
+@media (min-width: 990px) and (max-width: 1200px) {
+
+    .section-2 .info-grid {
+        width: 940px;
+    }
+}
+
+
+@media (min-width: 770px) and (max-width: 989px) {
+
+    .section-2 .info-grid {
+       width: 720px;
+       grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (min-width:575px) and (max-width: 770px) {
+
+    .section-2 > .content {
+        width: 520px;
+    }
+
+    .section-2 h3 {
+        font-size: 2.25rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 574px) {
+
+    .section-2 > .content {
+        width: 340px;
+    }
+
+    .section-2 h3 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+/* SECTION  */
+
+
+@media (min-width: 1201px) {
+
+    
+    .section- .content {
+        width: 1140px;
+        margin: auto;
+    }
+    
+}
+
+
+@media (min-width: 990px) and (max-width: 1200px) {
+
+
+    .section- .info-grid {
+        width: 940px;
+    }
+    
+}
+
+
+@media (min-width: 770px) and (max-width: 989px) {
+
+    .section- .info-grid {
+       width: 720px;
+       grid-template-columns: repeat(, 1fr);
+   }
+}
+
+@media (min-width:575px) and (max-width: 770px) {
+
+    .section- > .content {
+        width: 520px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 574px) {
+
+    .section- > .content {
+        width: 340px;
+    }
+
+}
+

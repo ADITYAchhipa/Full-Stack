@@ -1,0 +1,507 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* HEADER */
+
+header {
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+header > img {
+    position: fixed;
+    left: 10px;
+}
+
+header > .icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* NAV-BAR  */
+
+.nav-bar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar > ul {
+    height: 36px;
+    width: 440px;
+    margin: auto;
+    list-style-type: none;
+
+    display: flex;
+}
+
+.nav-bar > ul > li {
+    padding: 10px 20px;
+}
+
+.nav-bar > ul > li > a {
+    text-decoration: none;
+    color: #111111;;
+}
+
+.nav-bar > ul > li > a:active {
+    color: red;
+}
+
+.nav-bar > svg {
+    /* height: 50px; */
+    display: none;
+}
+
+
+/* SECTION 1 */
+
+.section-1 {
+    height: 620px;
+    width: 100%;
+    background-image: url(https://assets.nicepagecdn.com/11a8ddce/3667110/images/pexels-photo-218863.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1  .content {
+    box-sizing: content-box;
+    height: 460px;
+    width: 670px;
+    background-color: rgba(135, 135, 135, 0.5);
+    border: 20px solid #2590f4;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-1 > .content > h3 {
+    margin: 17px 10px 0px 10px;
+    font-size: 3rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.section-1 > .content > p {
+    margin-top: 41px;
+    padding: 0 40px;
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.section-1 > .content > button {
+    display: block;
+    padding: 10px 30px;
+    border: none;
+    background-color: #2590f4;
+    margin: 30px auto 0px auto;
+    color: white;
+    font-size: 1.075rem;
+    cursor: pointer;
+}
+
+
+/* SECTION 2  */
+
+
+.section-2 .content {
+    margin: auto;
+    padding: 66px 0px;
+}
+
+.section-2 .outer-flex {
+    display: flex;
+}
+
+.section-2 .ready {
+    flex: 1;
+    margin: auto;
+    padding: 38px 42px;
+    max-width: 540px;
+}
+
+.section-2 .ready h5 {
+    font-size: 2.25rem;
+}
+
+.section-2 .ready p {
+    margin-top: 25px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.section-2 .ready #bold {
+    font-weight: 700;
+}
+
+.section-2 .ready button {
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: none;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.section-2 .inner-flex {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.section-2 .sample {
+    display: flex;
+    gap: 20px;
+    min-height: 163.33px;
+    padding: 20px 0 20px 30px;
+}
+
+@keyframes icon {
+    0%{
+        /* display: none; */
+        opacity: 0%;
+        top: 300px;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100%{
+        top: 0px;
+        opacity: 100%;
+    }
+}
+
+.section-2 .icon {
+    height: 108px;
+    width: 108px;
+    margin: 0 20px;
+    border-radius: 50%;
+    background-color: #2590f4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    animation: icon 1s ease-in-out;
+    animation-timing-function: 4s;
+}
+
+.section-2 .desc {
+    width: 353px;
+}
+
+.section-2 .title {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    position: relative;
+    animation: title 1.5s ;
+    animation-timing-function: 4s;
+}
+
+@keyframes title {
+    0%{
+        top: -100px;
+
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+.section-2 .text {
+    margin: 20px 0 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* SECTION 3 */
+
+.section-3 {
+    background-image: url(https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/e6aafe75c27457318a5f4539/pexels-photo-3914752.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.section-3 .content {
+    margin: auto;
+}
+
+.section-3 .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    padding: 60px 0;
+}
+
+.section-3 .box {
+    background-color: white;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.section-3 .bar {
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    background-color: #2590f4;
+}
+
+.section-3 .sticker {
+    height: 90px;
+    width: 90px;
+    padding: 30px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #2590f4;
+}
+
+.section-3 .title {
+    margin: 20px auto 0 auto;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.section-3 .desc {
+    margin: 20px 0 0 0;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6;
+    color: #999999;
+}
+
+/* SECTION 4 */
+
+.section-4 {
+    background-color: #f2f2f2;
+}
+
+.section-4 .content {
+    margin: auto;
+    display: flex;
+}
+
+.section-4 .article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 16px 30px;
+
+}
+
+.section-4 .article h4 {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.section-4 .article p {
+    margin: 13px 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.section-4 .article button {
+    width: 140px;
+    border: none;
+    margin: 30px 0 0 0;
+    padding: 10px 30px;
+    background-color: #2590f4;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.section-4 .photo {
+    flex: 1;
+}
+
+.section-4 .photo img {
+    width: 100%;
+    margin: 20px 13px 0 0;
+}
+
+
+
+
+/* SECTION 5  */
+
+.section-5 .content {
+    margin: auto;
+    display: flex;
+    padding: 80px 0 0;
+}
+
+.section-5 .article {
+    flex: 1;
+}
+
+.section-5 .article .box {
+    padding: 30px;
+}
+
+.section-5 .article .name {
+    padding: 30px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #2590f4;
+
+}
+
+.section-5 .article .desig {
+    margin: 30px 0 0 0;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.section-5 .article .desc {
+    margin: 24px 0 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #999999;
+}
+
+.section-5 .photo {
+    flex: 1;
+}
+
+.section-5 .photo img {
+    width: 100%;
+}
+
+
+
+/* SECTION-6  */
+
+
+
+.section-6 {
+    padding: 70px 0;
+    background-color: #f2f2f2;
+}
+
+.section-6 .content {
+    background-color: white;
+    margin: auto;
+}
+
+.section-6 .flex-row {
+    display: flex;
+}
+
+.section-6 .left {
+    padding: 29px;
+}
+
+.section-6 .photo {
+    height: 260px;
+    width: 260px;
+    margin-left: 62px;
+    border-radius: 50%;
+    background-image: url(https://assets.nicepagecdn.com/11a8ddce/3667110/images/pexels-photo-733500copy.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.section-6 .sticker {
+    /* width: 116px; */
+    display: inline-block;
+    padding: 32px;
+    border-radius: 50%;
+    background-color: #2590f4;
+    position: relative;
+    left: -62px;
+}
+
+
+.section-6 .right {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-6 #quote {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.section-6 #freepik {
+    margin-top: 30px;
+}
+
+.section-6 #freepik > a {
+    text-decoration: none;
+    color: #2590f4;
+}
+
+.section-6 #phone {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.section-6 #number {
+    font-weight: 700;
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+}
+
+
+/* SECTION 7  */
+
+
+.section-7 {
+    background-color: #333333;
+}
+
+.section-7 .content {
+    height: 120px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-7 .content p {
+    font-size: 0.875rem;
+}
+
+

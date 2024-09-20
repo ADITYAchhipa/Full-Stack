@@ -1,0 +1,241 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* HEADER */
+
+header {
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:4;
+}
+
+header > img {
+    position: fixed;
+    left: 10px;
+}
+
+header > .icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* NAV-BAR  */
+
+.nav-bar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar > ul {
+    height: 36px;
+    width: 440px;
+    margin: auto;
+    list-style-type: none;
+
+    display: flex;
+}
+
+.nav-bar > ul > li {
+    padding: 10px 20px;
+}
+
+.nav-bar > ul > li > a {
+    text-decoration: none;
+    color: #111111;;
+}
+
+.nav-bar > ul > li > a:active {
+    color: red;
+}
+
+.nav-bar > svg {
+    /* height: 50px; */
+    display: none;
+}
+
+
+/* SECTION 1 */
+
+.section-1 {
+    height: 620px;
+    width: 100%;
+    background-image: url(https://assets.nicepagecdn.com/11a8ddce/3667110/images/pexels-photo-1666667.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1  .content {
+    box-sizing: content-box;
+    height: 460px;
+    width: 670px;
+    background-color: rgba(135, 135, 135, 0.5);
+    border: 20px solid #2590f4;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-1 > .content > h3 {
+    margin: 17px 10px 0px 10px;
+    font-size: 3rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.section-1 > .content > p {
+    margin-top: 41px;
+    padding: 0 40px;
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.section-1 > .content > button {
+    display: block;
+    padding: 10px 30px;
+    border: none;
+    background-color: #2590f4;
+    margin: 30px auto 0px auto;
+    color: white;
+    font-size: 1.075rem;
+}
+
+
+/* SECTION 2  */
+
+.section-2 .content {
+    margin: auto;
+    padding: 60px 0 120px 0;
+}
+
+.section-2 .content h3 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.section-2 .content p {
+    margin: 17px 0 0;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.section-2 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-2 .input-flex {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-2 .input-flex input {
+    width: 302px;
+    padding: 12px 10px;
+    background-color: #f2f2f2;
+    border: 5px solid transparent;
+    font-size: 1rem;
+}
+
+.section-2 form button {
+    font-size: 1rem;
+    color: white;
+    background-color: #2590f4;
+    margin: 20px auto;
+    padding: 13px 45px;
+    border: none;
+}
+
+
+/* SECTION 3 */
+
+
+.section-3 {
+    background-color: #2590f4;
+}
+
+.section-3 .content {
+    margin: auto;
+}
+
+.section-3 .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.section-3 .box {
+    background-color: white;
+    position: relative;
+    top: -60px;
+    padding: 0 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-3 .sticker {
+    background-color: #2590f4;
+    padding: 42px;
+    display: inline-block;
+    border-radius: 50%;
+
+    position: relative;
+    top: -35px;
+}
+
+.section-3 .title {
+    margin: 37px 0 0 0;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.section-3 .p1 {
+    margin: 17px 0 7px 0;
+}
+
+/* SECTION 4 */
+
+.section-4 {
+    background-color: #333333;
+}
+
+.section-4 .content {
+    height: 120px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 .content p {
+    font-size: 0.875rem;
+}
+
+

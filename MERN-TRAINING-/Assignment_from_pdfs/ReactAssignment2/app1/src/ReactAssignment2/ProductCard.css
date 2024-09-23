@@ -1,0 +1,30 @@
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-title {
+    font-size: 1.2em;
+    margin: 8px 0;
+  }
+  
+  .product-price {
+    color: #888;
+    margin: 8px 0;
+  }
+  
+  .product-description {
+    font-size: 0.9em;
+    color: #555;
+  }
+  

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Enter your name</p>
+    <input id="input-box" type="text">
+    <button id="show-btn" type="submit">Show</button>
+
+    <div id="input-log">
+
+    </div>
+
+
+    <script>
+        let showBtn = document.getElementById("show-btn");
+        let inputBox = document.getElementById("input-box");
+        let inputLog = document.getElementById("input-log");
+
+
+        let toggle = false;
+
+        showBtn.addEventListener("click", ()=>{
+            toggle = !toggle;
+
+            if(toggle) {
+                let logObj = document.createElement("p");
+                logObj.id = "log-item";
+                logObj.innerText = inputBox.value;
+
+                inputLog.appendChild(logObj);
+            } 
+            else {
+                let logObj = document.getElementById("log-item");
+                inputLog.removeChild(logObj);
+            }
+        })
+
+    </script>
+</body>
+</html>

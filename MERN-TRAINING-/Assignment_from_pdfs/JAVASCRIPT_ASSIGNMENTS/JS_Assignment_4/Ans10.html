@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="toCopy">
+        <p id="copy-this">This is div tag &lt;div&gt;</p>
+    </div>
+    
+    <div id="paste">
+
+    </div>
+
+
+    <script>
+        let toCopy = document.getElementById("copy-this");
+        let pasteHere = document.getElementById("paste");
+
+        let innerText = document.createElement("p");
+        innerText.innerText = toCopy.innerText;
+
+        pasteHere.appendChild(innerText);
+
+        let textContent = document.createElement("p");
+        textContent.innerHTML = toCopy.innerHTML;
+
+        pasteHere.appendChild(textContent);
+    </script>
+</body>
+</html>

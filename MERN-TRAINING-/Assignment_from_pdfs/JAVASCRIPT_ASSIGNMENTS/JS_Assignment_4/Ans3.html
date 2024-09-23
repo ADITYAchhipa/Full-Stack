@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ans 3</title>
+</head>
+<body>
+    <div class="box">
+        <button id="add-btn">Add Item</button>
+        <ul id="item-list">
+
+        </ul>
+    </div>
+
+    <script>
+        let count = 0
+
+        let addBtn = document.getElementById("add-btn")
+        let itemList = document.getElementById("item-list")
+
+        addBtn.addEventListener("click", ()=>{
+            let newItem = document.createElement("li");
+            newItem.innerText = "Item " + (++count)
+            itemList.appendChild(newItem);
+        })
+
+    </script>
+</body>
+</html>

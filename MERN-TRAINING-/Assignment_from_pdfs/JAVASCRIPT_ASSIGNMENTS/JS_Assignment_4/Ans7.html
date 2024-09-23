@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ans 7</title>
+</head>
+<body>
+    <button id="hide-btn">
+        Hide/Unhide
+    </button>
+
+    <h4 id="hidden-text"  style="display: none;">Hidden text</h4>
+
+
+    <script>
+        let toggle = false;
+        let hideBtn = document.getElementById("hide-btn")
+        let hiddenText = document.getElementById("hidden-text")
+
+        hideBtn.addEventListener("click", ()=>{
+            toggle = !toggle;
+            if(toggle) {
+                hiddenText.style.display = "block";
+            } else {
+                hiddenText.style.display = "none";
+            }
+        })
+    </script>
+</body>
+</html>

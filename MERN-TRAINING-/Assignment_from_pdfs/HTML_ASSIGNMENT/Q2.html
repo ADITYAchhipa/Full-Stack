@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+
+    <style>
+        .form {
+            margin: auto;
+            width: 500px;
+            padding: 50px;
+            justify-content: center;
+            /* text-align: center; */
+            border: 2px solid black;
+        }
+        label {
+            margin-top: 10px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Create a student admission form for the college webpage using HTML form objects. (include a select tag for the chosen stream).
+        note: The form should ask all the necessary questions using appropriate form elements
+    </h1>
+
+    <hr>
+
+    <div class="form">
+        <form action="#">
+            <label for="username">Enter your username</label>
+            <input type="text" name="username" id="username" required>
+            <br>
+
+            <label for="specialisation">Enter your specialisation, if any</label>
+            <input type="text" name="specialisation">
+            <br>    
+
+            <label for="email">Enter your email</label>
+            <input type="text" name="email" required>
+            <br>
+
+            <label for="phone">Enter your mobile number</label>
+            <input type="tel" name="phone" required>
+            <br>
+
+            <label for="stream">Select your stream</label>
+            <select name="stream" id="">
+                <option value="select" disabled selected> Select a stream</option>
+                <option value="CS">Comuter Science and Engineering</option>
+                <option value="ECE">Electronics and Communication</option>
+                <option value="ME">Mechanical Engineering</option>
+                <option value="CE">Chemical Engineering</option>
+            </select>
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ans2</title>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+
+    <script>
+        let box = document.getElementById("box")
+        box.style.height = "400px"
+        box.style.width = "400px"
+        box.style.backgroundColor = "crimson"
+
+        box.addEventListener("mouseover", ()=>{
+            box.style.backgroundColor = "magenta"
+        })
+
+        box.addEventListener("mouseout", ()=> {
+            box.style.backgroundColor = "crimson"
+        })
+    </script>
+</body>
+</html>
